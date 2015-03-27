@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4970862E1AC508C700246F88 /* ContactsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4970862D1AC508C700246F88 /* ContactsTableViewController.swift */; };
+		497086301AC5157600246F88 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4970862F1AC5157600246F88 /* Contact.swift */; };
 		4992B81D1AC4017D0013808C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4992B81C1AC4017D0013808C /* AppDelegate.swift */; };
 		4992B81F1AC4017D0013808C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4992B81E1AC4017D0013808C /* ViewController.swift */; };
 		4992B8221AC4017D0013808C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4992B8201AC4017D0013808C /* Main.storyboard */; };
@@ -26,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4970862D1AC508C700246F88 /* ContactsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsTableViewController.swift; sourceTree = SOURCE_ROOT; };
+		4970862F1AC5157600246F88 /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		4992B8171AC4017D0013808C /* Contacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Contacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4992B81B1AC4017D0013808C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4992B81C1AC4017D0013808C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +81,7 @@
 		4992B8191AC4017D0013808C /* Contacts */ = {
 			isa = PBXGroup;
 			children = (
+				4970862D1AC508C700246F88 /* ContactsTableViewController.swift */,
 				4992B81C1AC4017D0013808C /* AppDelegate.swift */,
 				4992B81E1AC4017D0013808C /* ViewController.swift */,
 				4992B8201AC4017D0013808C /* Main.storyboard */,
@@ -90,6 +95,7 @@
 		4992B81A1AC4017D0013808C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4970862F1AC5157600246F88 /* Contact.swift */,
 				4992B81B1AC4017D0013808C /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -212,8 +218,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				497086301AC5157600246F88 /* Contact.swift in Sources */,
 				4992B81F1AC4017D0013808C /* ViewController.swift in Sources */,
 				4992B81D1AC4017D0013808C /* AppDelegate.swift in Sources */,
+				4970862E1AC508C700246F88 /* ContactsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +413,7 @@
 				4992B8381AC4017D0013808C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4992B8391AC4017D0013808C /* Build configuration list for PBXNativeTarget "ContactsTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +422,7 @@
 				4992B83B1AC4017D0013808C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
