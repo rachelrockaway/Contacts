@@ -15,6 +15,7 @@
 		4992B8241AC4017D0013808C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4992B8231AC4017D0013808C /* Images.xcassets */; };
 		4992B8271AC4017D0013808C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4992B8251AC4017D0013808C /* LaunchScreen.xib */; };
 		4992B8331AC4017D0013808C /* ContactsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4992B8321AC4017D0013808C /* ContactsTests.swift */; };
+		49C044F71AC555D800701AC0 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C044F61AC555D800701AC0 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		4992B82C1AC4017D0013808C /* ContactsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContactsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4992B8311AC4017D0013808C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4992B8321AC4017D0013808C /* ContactsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTests.swift; sourceTree = "<group>"; };
+		49C044F61AC555D800701AC0 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 				4992B81C1AC4017D0013808C /* AppDelegate.swift */,
 				4992B81E1AC4017D0013808C /* ViewController.swift */,
 				4992B8201AC4017D0013808C /* Main.storyboard */,
+				49C044F61AC555D800701AC0 /* DetailViewController.swift */,
 				4992B8231AC4017D0013808C /* Images.xcassets */,
 				4992B8251AC4017D0013808C /* LaunchScreen.xib */,
 				4992B81A1AC4017D0013808C /* Supporting Files */,
@@ -220,6 +223,7 @@
 			files = (
 				497086301AC5157600246F88 /* Contact.swift in Sources */,
 				4992B81F1AC4017D0013808C /* ViewController.swift in Sources */,
+				49C044F71AC555D800701AC0 /* DetailViewController.swift in Sources */,
 				4992B81D1AC4017D0013808C /* AppDelegate.swift in Sources */,
 				4970862E1AC508C700246F88 /* ContactsTableViewController.swift in Sources */,
 			);

@@ -27,7 +27,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="Q6e-K5-It8" kind="show" id="M0q-kg-40Z"/>
+                                    <segue destination="Q6e-K5-It8" kind="show" identifier="contactsDetailSegue" id="M0q-kg-40Z"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -44,10 +44,10 @@
             </objects>
             <point key="canvasLocation" x="1887" y="195"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="Ra0-fW-FQe">
             <objects>
-                <viewController id="Q6e-K5-It8" sceneMemberID="viewController">
+                <viewController id="Q6e-K5-It8" customClass="DetailViewController" customModule="Contacts" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="luo-gD-KYO"/>
                         <viewControllerLayoutGuide type="bottom" id="b2E-al-Avv"/>
@@ -55,11 +55,29 @@
                     <view key="view" contentMode="scaleToFill" id="RSB-oi-Dph">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PVb-Aj-YQ7">
+                                <rect key="frame" x="21" y="72" width="278" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Phone Number" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="neU-Ts-0aR">
+                                <rect key="frame" x="21" y="101" width="278" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="3FN-cr-Uqt"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="nameLabel" destination="PVb-Aj-YQ7" id="Ghe-B5-HK4"/>
+                        <outlet property="phoneNumberLabel" destination="neU-Ts-0aR" id="cec-gW-w2e"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y8L-cw-Rgu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

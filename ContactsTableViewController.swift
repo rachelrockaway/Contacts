@@ -68,6 +68,12 @@ class ContactsTableViewController: UITableViewController {
         return cell
     }
 
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let indexPath = self.tableView.indexPathForCell(sender as UITableViewCell)!
+        let contact = self.contacts[indexPath.row]
+        var destination = segue.destinationViewController as DetailViewController
+        destination.contact = contact
+    }
 
     /*
     // Override to support conditional editing of the table view.
