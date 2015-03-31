@@ -97,14 +97,12 @@ class ContactsTableViewController: UITableViewController {
      */                   // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }    
     }
-
-
-    /*
-    // Override to support rearranging the table view.
+    
     override func tableView(tableView: UITableView, moveRowAtIndexPath fromIndexPath: NSIndexPath, toIndexPath: NSIndexPath) {
-
+        let contactMoving = self.contacts.removeAtIndex(fromIndexPath.row)
+        self.contacts.insert(contactMoving, atIndex: toIndexPath.row)
     }
-    */
+
 
     /*
     // Override to support conditional rearranging of the table view.
