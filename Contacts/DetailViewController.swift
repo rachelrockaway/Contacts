@@ -26,7 +26,8 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
             if let name = contact.name {
                 self.nameField.text = name
             }
-            if let phoneNumber = contact.phoneNumber {
+
+           if let phoneNumber = contact.phoneNumber {
                 self.phoneNumberField.text = phoneNumber
             }
         }
