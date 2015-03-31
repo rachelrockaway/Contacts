@@ -28,6 +28,9 @@ class ContactsTableViewController: UITableViewController {
         self.contacts.append(rich)
         self.contacts.append(mindy)
 
+        let moveButton = UIBarButtonItem(barButtonSystemItem: .Edit, target: self, action: Selector("toggleEdit"))
+        self.navigationItem.leftBarButtonItem = moveButton
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -35,6 +38,10 @@ class ContactsTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
 
+    func toggleEdit() {
+        self.tableView.setEditing(!self.tableView.editing, animated: true)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -75,25 +82,22 @@ class ContactsTableViewController: UITableViewController {
         destination.contact = contact
     }
 
-    /*
-    // Override to support conditional editing of the table view.
+
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
         // Return NO if you do not want the specified item to be editable.
         return true
     }
-    */
 
-    /*
-    // Override to support editing the table view.
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if editingStyle == .Delete {
+            self.contacts.removeAtIndex(indexPath.row)
             // Delete the row from the data source
             tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-        } else if editingStyle == .Insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+      /* else if editingStyle == .Insert {
+     */                   // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }    
     }
-    */
+
 
     /*
     // Override to support rearranging the table view.
