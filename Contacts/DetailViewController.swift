@@ -36,11 +36,19 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
     }
     
     func textFieldDidEndEditing(textField: UITextField) {
-        if textField == self.nameField {
-            self.contact?.name = textField.text
-        } else if textField == self.phoneNumberField {
-            self.contact?.phoneNumber == textField.text
+//        if textField == self.nameField {
+//            self.contact?.name = textField.text
+//        } else if textField == self.phoneNumberField {
+//            self.contact?.phoneNumber == textField.text
+//        }
+        if textField == nameField {
+            contact?.name = textField.text
+        } else if textField == phoneNumberField {
+            contact?.phoneNumber = textField.text
         }
+
+
+
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
